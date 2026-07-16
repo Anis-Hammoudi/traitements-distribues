@@ -13,7 +13,6 @@ class AnneauVNodes:
         self.vnode_vers_noeud = {} # vnode_hash -> noeud_reel
         
     def ajouter_noeud(self, nom_noeud):
-        # On seme V repliques sur l'anneau pour un seul noeud reel
         for i in range(self.vnodes_par_noeud):
             vnode_name = f"{nom_noeud}#{i}"
             pos = h(vnode_name)
