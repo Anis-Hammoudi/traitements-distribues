@@ -29,12 +29,12 @@ class AnneauVNodes:
         return self.vnode_vers_noeud[vnode_hash]
 
 def demo():
-    K = 100000 # Plus de cles pour une meilleure distribution statistique
+    K = 5000000 # Plus de cles pour une meilleure distribution statistique
     V = 150
     print(f"--- Etape 4 : Noeuds Virtuels (V={V}) ---")
     
     anneau = AnneauVNodes(vnodes_par_noeud=V)
-    noeuds_reels = ["Noeud_A", "Noeud_B", "Noeud_C", "Noeud_D", "Noeud_E"]
+    noeuds_reels = ["Noeud_A", "Noeud_B", "Noeud_C", "Noeud_D", "Noeud_E","Noeud_F","Noeud_G","Noeud_H","Noeud_I","Noeud_J","Noeud_K","Noeud_L","Noeud_M", "Noeud_N","Noeud_O","Noeud_P"," Noeud_Q","Noeud_R","Noeud_S", "Noeud_T"]  
     for nom in noeuds_reels:
         anneau.ajouter_noeud(nom)
         
